@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalhando com Tabelas - DIO</title>
+    <style>
+      table tr:nth-child(even) {
+        background-color: burlywood;
+      }
+      table tr:hover {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <table
+      summary="Esta tabela se refere as idades da turma A"
+      border="1"
+      width="250"
+      align="center"
+      cellspacing="5"
+      cellpadding="5">
+      <tr>
+        <td>Nome</td>
+        <td>Idade</td>
+      </tr>
+      <tr>
+        <td>Luis</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>Felipe</td>
+        <td>21</td>
+      </tr>
+      <tr>
+        <td>Pam</td>
+        <td>22</td>
+      </tr>
+      <tr>
+        <td>Pedro</td>
+        <td>5</td>
+      </tr>
+    </table>
+    <br />
+    <table border="1" width="250" align="center">
+      <caption>
+        Tabela criada
+      </caption>
+      <thead>
+        <tr>
+          <th title="Nome completo">Nome</th>
+          <th>Idade</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td>6</td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>Luis</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Felipe</td>
+          <td>21</td>
+        </tr>
+        <tr>
+          <td>Pam</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>Pedro</td>
+          <td>5</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+   
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template - Utilizar como modelo</title>
+    <link rel="stylesheet" href="base.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="menu">
+        <!-- Aqui vai o seu menu -->
+        <ul>
+          <li><a href="/Desafio Modulo 2/index.html">Home</a></li>
+          <li><a href="/Desafio Modulo 2/sobre.html">Sobre</a></li>
+          <li><a href="/Desafio Modulo 2/atendimento.html">Atendimento</a></li>
+          <li><a href="/Desafio Modulo 2/contato.html">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <div class="header">
+          <img
+            src="/Desafio Modulo 2/ad80b685dc7a9c5257a4d3c052ab8717.jpg"
+            style="width: 250px"
+            alt="" />
+        </div>
+
+        <div class="content">
+          <h1>Contato</h1>
+          <p>Telefone para contato: (48) 99999-9999</p>
+          <p>Endereço rua de tal numero 888, em frente ao posto</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26551113.412908025!2d139.8040917630621!3d35.67447285074407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2zSmFww6Nv!5e0!3m2!1spt-BR!2sbr!4v1721342132240!5m2!1spt-BR!2sbr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Assunto</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn-submit">Enviar</button>
+            <button
+              type="button"
+              class="btn-clear"
+              onclick="document.getElementById('contactForm').reset();">
+              Limpar
+            </button>
+          </div>
+        </form>
+
+        <div class="footer">
+          Footer
+          <!-- Aqui vai o seu rodapé -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
