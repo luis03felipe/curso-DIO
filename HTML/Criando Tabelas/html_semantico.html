@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Semântico</title>
+    <style>
+      nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+      }
+      nav ul li a {
+        padding: 10px 15px;
+        color: blue;
+        text-decoration: none;
+        border-radius: 15px 0;
+      }
+      nav ul li a:hover {
+        color: white;
+        background: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Essa mudança veio com o HTML 5, antes era algo como:
+     <div class="header"> 
+     <div class="corpo"> 
+     <div class="rodape"> -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="">Item 1</a></li>
+          <li><a href="">Item 2</a></li>
+          <li><a href="tel:+5548996077333">Telefone</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        É tipo uma div, porém é melhor semanticamente. Não há limite de section.
+      </section>
+      <aside>
+        É um asssunto que nao tem haver com o tema principal da pagina. "Estou
+        buscando uma casa para alugar", aside são assuntos auxiliares, como:
+        "Numeros de corretoras, classificados etc..;"
+      </aside>
+      <article>
+        <h1>Descoberta de vida em outro planeta.</h1>
+        <p>Artigo publicado em <time pubdate>21/01/2022 19:00</time></p>
+        <p>asdasdasdasdas asd asd asd</p>
+        <p>asdasdasdasdas asd asd asd</p>
+        <p>asdasdasdasdas asd asd asd Estrela Marta</p>
+        <blockquote cite="http://wikipedia.com">
+          Estrela Marta é referente a uma estrela bem mais velha que o nosso
+          sol.Estrela Marta é referente a uma estrela bem mais velha que o nosso
+          sol.Estrela Marta é referente a uma estrela bem mais velha que o nosso
+          sol.
+        </blockquote>
+        <p>
+          Segundo alunos da DIO.me
+          <q cite="http://dio.me.com">
+            Esse é o melhor curso de HTML que ja fizeram
+          </q>
+        </p>
+      </article>
+    </main>
+    <footer>
+      <address></address>
+      <!-- semanticamente serve para colocar endereços -->
+    </footer>
+  </body>
+</html>
